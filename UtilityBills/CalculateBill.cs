@@ -11,6 +11,8 @@ namespace UtilityBills
         int counterEnergyLast, counterEnergyNow, counterWaterLast, counterWaterNow, counterSewageLast, counterSewageNow,
             differenceEnergy, differenceWater, differenceSewage, differenceGas;
 
-        double 
+        double tariffEnergyNorm, tariffEnergyOverNorm, tariffWaterNorm, tariffSewage, tariffGas;
+
+
     }
 }
