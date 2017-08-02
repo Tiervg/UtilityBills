@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UtilityBills"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="241" Width="834">
+    <Grid VerticalAlignment="Top" Margin="0,0,0,0">
+        <Label Content="Электричество" Margin="9,78,539,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.496,0.5" Height="29"/>
+        <Label Content="Вода" Margin="9,108,539,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.5" FontWeight="Bold" FontSize="14" Height="29"/>
+        <Label Content="Канализация" Margin="9,137,539,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Height="29"/>
+        <Label x:Name="tariffGas" Content="Газ" Margin="9,166,539,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Height="29"/>
+        <Label Content="Тариф (грн)" HorizontalAlignment="Left" Margin="139,0,0,0" VerticalAlignment="Top" Width="185" HorizontalContentAlignment="Center" FontSize="24" Height="42"/>
+        <Label Content="до 100 кВт" Margin="139,42,0,0" VerticalAlignment="Top" Width="90" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
+        <Label Content="свыше 100 кВт" HorizontalAlignment="Left" Margin="234,42,0,0" VerticalAlignment="Top" Height="28" Width="90"/>
+        <Label x:Name="energyNorm" Content="0,9" HorizontalAlignment="Left" Margin="139,80,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="energyOverNorm" Content="1,68" HorizontalAlignment="Left" Margin="234,82,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="tariffWaterNorm" Content="7,932" HorizontalAlignment="Left" Margin="150,111,0,0" VerticalAlignment="Top" Width="174" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="tariffSewage" Content="4,272" HorizontalAlignment="Left" Margin="150,137,0,0" VerticalAlignment="Top" Width="174" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="tariffGas1" Content="6,897" HorizontalAlignment="Left" Margin="150,163,0,0" VerticalAlignment="Top" Width="174" HorizontalContentAlignment="Center" Height="26"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="150,10,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Показания счетчика" HorizontalAlignment="Left" Margin="329,0,0,0" VerticalAlignment="Top" Width="235" FontSize="24" Height="42"/>
+        <Label Content="Предыдущие" HorizontalAlignment="Left" Margin="339,42,0,0" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Center" Height="26"/>
+        <Label Content="Настоящие" HorizontalAlignment="Left" Margin="454,42,0,0" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Center" Height="26"/>
+        <TextBox x:Name="counterEnergyLast" HorizontalAlignment="Left" Height="23" Margin="339,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="counterEnergyNow" HorizontalAlignment="Left" Height="23" Margin="454,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="counterWaterLast" HorizontalAlignment="Left" Height="23" Margin="339,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="counterWaterNow" HorizontalAlignment="Left" Height="23" Margin="454,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="couterGasLast" HorizontalAlignment="Left" Height="23" Margin="339,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="counterGasNow" HorizontalAlignment="Left" Height="23" Margin="454,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="329,10,0,0" VerticalAlignment="Top" Width="240"/>
+        <Label Content="Разница" HorizontalAlignment="Left" Margin="574,0,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="101"/>
+        <Label x:Name="differenceEnergy" Content="0" HorizontalAlignment="Left" Margin="574,85,0,0" VerticalAlignment="Top" Width="101" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="differenceWater" Content="0" HorizontalAlignment="Left" Margin="574,113,0,0" VerticalAlignment="Top" Width="101" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="differenceGas" Content="0" HorizontalAlignment="Left" Margin="574,166,0,0" VerticalAlignment="Top" Width="101" HorizontalContentAlignment="Center" Height="26"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="574,10,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label Content="К оплате" Margin="690,0,0,0" VerticalAlignment="Top" Height="36" HorizontalContentAlignment="Center" FontSize="24" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="costEnergy" Content="0" HorizontalAlignment="Left" Margin="680,85,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="costWater" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="680,111,0,0" Width="130" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="costGas" Content="0" HorizontalAlignment="Left" Margin="680,169,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" Height="26"/>
+        <Label x:Name="costSewage" Content="0" HorizontalAlignment="Left" Margin="680,139,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" Height="26"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="680,10,0,0" VerticalAlignment="Top" Width="130"/>
     </Grid>
 </Window>
