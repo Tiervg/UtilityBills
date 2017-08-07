@@ -23,6 +23,8 @@ namespace UtilityBills
         public MainWindow()
         {
             InitializeComponent();
+            new Presenter(this);
         }
+
     }
 }
