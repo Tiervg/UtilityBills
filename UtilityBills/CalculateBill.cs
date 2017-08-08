@@ -13,7 +13,8 @@ namespace UtilityBills
         public int counterEnergyLast, counterEnergyNow, counterWaterLast, counterWaterNow, counterSewageLast, 
             counterSewageNow, counterGasLast, counterGasNow,differenceEnergy, differenceWater, differenceSewage, differenceGas;
 
-        public double tariffEnergyNorm, tariffEnergyOverNorm, tariffWaterNorm, tariffSewage, tariffGas;
+        public double tariffEnergyNorm, tariffEnergyOverNorm, tariffWaterNorm, tariffSewage, tariffGas,energyBill,waterBill,sewageBill,gasBill;
+
 
         /// <summary>
         /// calculate energy diffrence 
@@ -57,7 +58,6 @@ namespace UtilityBills
         /// <returns></returns>
         public double EnergyBill()
         {
-            double energyBill = 0;
             if (differenceEnergy <= 100)
             {
                 energyBill = differenceEnergy * tariffEnergyNorm;
@@ -72,17 +72,17 @@ namespace UtilityBills
 
         public double WaterBill()
         {
-            return differenceWater * tariffWaterNorm;
+            return waterBill = differenceWater * tariffWaterNorm;
         }
 
         public double SewageBill()
         {
-            return differenceSewage * tariffSewage;
+            return sewageBill = differenceSewage * tariffSewage;
         }
 
         public double GasBill()
         {
-            return differenceGas * tariffGas;
+            return gasBill = differenceGas * tariffGas;
         }
 
 

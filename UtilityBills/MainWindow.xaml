@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UtilityBills"
         mc:Ignorable="d"
-        Title="MainWindow" Height="241" Width="834">
+        Title="MainWindow" Height="277.74" Width="834">
     <Grid VerticalAlignment="Top" Margin="0,0,0,0">
         <Label Content="Электричество" Margin="9,78,681,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.496,0.5" Height="29"/>
         <Label Content="Вода" Margin="9,108,681,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.5" FontWeight="Bold" FontSize="14" Height="29"/>
@@ -23,12 +23,12 @@
         <Label Content="Показания счетчика" HorizontalAlignment="Left" Margin="329,0,0,0" VerticalAlignment="Top" Width="235" FontSize="24" Height="42"/>
         <Label Content="Предыдущие" HorizontalAlignment="Left" Margin="339,42,0,0" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Center" Height="26"/>
         <Label Content="Настоящие" HorizontalAlignment="Left" Margin="454,42,0,0" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Center" Height="26"/>
-        <TextBox x:Name="counterEnergyLast" HorizontalAlignment="Left" Height="23" Margin="339,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="counterEnergyNow" HorizontalAlignment="Left" Height="23" Margin="454,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="counterWaterLast" HorizontalAlignment="Left" Height="23" Margin="339,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
-        <TextBox x:Name="counterWaterNow" HorizontalAlignment="Left" Height="23" Margin="454,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="couterGasLast" HorizontalAlignment="Left" Height="23" Margin="339,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
-        <TextBox x:Name="counterGasNow" HorizontalAlignment="Left" Height="23" Margin="454,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="counterEnergyLast" HorizontalAlignment="Left" Height="23" Margin="339,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right" Text="0"/>
+        <TextBox x:Name="counterEnergyNow" HorizontalAlignment="Left" Height="23" Margin="454,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right" Text="0"/>
+        <TextBox x:Name="counterWaterLast" HorizontalAlignment="Left" Height="23" Margin="339,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Text="0" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="counterWaterNow" HorizontalAlignment="Left" Height="23" Margin="454,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right" Text="0"/>
+        <TextBox x:Name="couterGasLast" HorizontalAlignment="Left" Height="23" Margin="339,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right" Text="0"/>
+        <TextBox x:Name="counterGasNow" HorizontalAlignment="Left" Height="23" Margin="454,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" HorizontalContentAlignment="Right" Text="0"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="329,10,0,0" VerticalAlignment="Top" Width="240"/>
         <Label Content="Разница" HorizontalAlignment="Left" Margin="574,0,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="101"/>
         <Label x:Name="differenceEnergy" Content="0" HorizontalAlignment="Left" Margin="574,85,0,0" VerticalAlignment="Top" Width="101" HorizontalContentAlignment="Center" Height="26"/>
@@ -41,5 +41,7 @@
         <Label x:Name="costGas" Content="0" HorizontalAlignment="Left" Margin="680,169,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" Height="26"/>
         <Label x:Name="costSewage" Content="0" HorizontalAlignment="Left" Margin="680,139,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" Height="26"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="185" Margin="680,10,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="totalCost" Content="Итого:" HorizontalAlignment="Left" Margin="574,200,0,-18" VerticalAlignment="Top" Height="39" Width="101" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Right"/>
+        <Label x:Name="totalBill" Content="" HorizontalAlignment="Left" Margin="680,200,0,-13" VerticalAlignment="Top" Width="130" Height="39" FontSize="20" FontWeight="Bold" Background="White" Foreground="#FFFD0A0A" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>
